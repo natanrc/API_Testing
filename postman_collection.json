@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "d5ef5547-028f-4b96-accf-ad166b9a80c1",
+		"name": "TechExercise",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16026145"
+	},
+	"item": [
+		{
+			"name": "currentwhether",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Request is successful with a status code of 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/current?lat={{lat}}&lon={{lon}}&key={{tech_apiKey}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"current"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "{{lat}}"
+						},
+						{
+							"key": "lon",
+							"value": "{{lon}}"
+						},
+						{
+							"key": "key",
+							"value": "{{tech_apiKey}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "forcast3hours",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let key = pm.environment.get(\"tech_apiKey\")\r",
+							"console.log('here is my key: ${key}')\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/forecast/hourly?postal_code=28546&key={{tech_apiKey}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"forecast",
+						"hourly"
+					],
+					"query": [
+						{
+							"key": "postal_code",
+							"value": "28546"
+						},
+						{
+							"key": "key",
+							"value": "{{tech_apiKey}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
