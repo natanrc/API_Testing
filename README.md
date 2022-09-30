@@ -16,3 +16,8 @@ structure file:
 Run POSTMAN API: 
    
          newman run "TechExercise.postman_collection.json" -e "TechExercise.postman_collection.json" -k
+         
+         
+Postman API Documentation:
+          
+          https://documenter.getpostman.com/view/16026145/2s83t4uc1U
