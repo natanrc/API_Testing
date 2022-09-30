@@ -1,0 +1,150 @@
+{
+	"id": "a086a2f9-e61f-4019-b7f8-0c73ced81dbb",
+	"name": "TechExercise",
+	"timestamp": "2022-09-29T18:26:20.589Z",
+	"collection_id": "16026145-d5ef5547-028f-4b96-accf-ad166b9a80c1",
+	"folder_id": 0,
+	"environment_id": "16026145-6a6174b7-0505-4ff0-a5fe-636edc9e1901",
+	"totalPass": 20,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "da7ff83c-15ff-4a75-8e78-c376d4f97536",
+			"name": "currentwhether",
+			"time": 255,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 10,
+					"fail": 0
+				}
+			},
+			"times": [
+				797,
+				255,
+				255,
+				254,
+				256,
+				256,
+				255,
+				258,
+				257,
+				255
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "7e8fc9f2-b3ba-4824-abaf-2fde9cbcf861",
+			"name": "forcast3hours",
+			"time": 269,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 10,
+					"fail": 0
+				}
+			},
+			"times": [
+				263,
+				257,
+				271,
+				266,
+				272,
+				259,
+				271,
+				258,
+				257,
+				269
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 10,
+	"totalTime": 5741,
+	"collection": {
+		"requests": [
+			{
+				"id": "da7ff83c-15ff-4a75-8e78-c376d4f97536",
+				"method": "GET"
+			},
+			{
+				"id": "7e8fc9f2-b3ba-4824-abaf-2fde9cbcf861",
+				"method": "GET"
+			}
+		]
+	}
+}
